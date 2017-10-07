@@ -11,7 +11,7 @@ import android.widget.ExpandableListView;
 
 import com.example.jinyu.Database.GreenDaoManager;
 import com.example.jinyu.Database.Word;
-import com.example.jinyu.Init;
+import com.example.jinyu.initPro.Init;
 import com.example.jinyu.R;
 
 import java.util.ArrayList;

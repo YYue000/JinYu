@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<web-app>
+		<display-name>My Web Application</display-name>   <!--  显示内容标题名  -->
+		<description>A application for test</description>   <!--  描述名  -->
+		<servlet>
+ 		<servlet-name>base</servlet-name>
+ 		<servlet-class>BaseServlet</servlet-class>
+ 
+ 		</servlet>
+ 		<servlet-mapping>
+ 		<servlet-name>base</servlet-name>
+ 		<url-pattern>/base</url-pattern>
+ 		</servlet-mapping>
+	</web-app>
+	

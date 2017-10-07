@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.jinyu.Database.GreenDaoManagerStc;
 import com.example.jinyu.Database.Sentence;
-import com.example.jinyu.Init;
+import com.example.jinyu.initPro.Init;
 import com.example.jinyu.R;
 
 import java.util.ArrayList;

@@ -10,7 +10,7 @@ import android.net.Uri;
 import android.util.Log;
 import android.webkit.MimeTypeMap;
 
-import com.example.jinyu.Init;
+import com.example.jinyu.initPro.Init;
 
 /**
  * Created by yyx on 2017/8/12.

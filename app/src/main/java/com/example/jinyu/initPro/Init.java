@@ -1,4 +1,4 @@
-package com.example.jinyu;
+package com.example.jinyu.initPro;
 import android.content.Context;
 import android.os.Environment;
 import android.util.Log;
@@ -7,10 +7,12 @@ import com.example.jinyu.Database.GreenDaoManagerStc;
 import com.example.jinyu.Database.Sentence;
 import com.example.jinyu.Database.Word;
 import com.example.jinyu.Download.Download;
+import com.example.jinyu.Internet.NetService;
 import com.example.jinyu.Sound.Sound;
 
 import com.example.jinyu.Database.GreenDaoManager;
 import com.example.jinyu.Sound.Sound;
+import com.example.jinyu.StartActivity;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -18,12 +20,14 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Iterator;
 
 /**
  * Created by yyx on 2017/8/19.
  */
 
-public class Init extends Thread{
+public class Init{
     public static GreenDaoManager database;
     public static GreenDaoManagerStc databaseStc;
     public static final String dbname = "jsjm.db";
@@ -177,18 +181,16 @@ public class Init extends Thread{
     public String getRootPath(){return rootPath;}
 
     //for dayshow activity
-    private static String[] DSurls = {"http://mp.weixin.qq.com/s/jlle5_4DXBKk7HtHrabhoQ",
-            "http://mp.weixin.qq.com/s/HmolWHdnu1D7SINv7Lza3Q",
-        "http://mp.weixin.qq.com/s/tSRY7d3f7X4t7k3YVWMXTw",
-            "http://mp.weixin.qq.com/s/4FsSUx46LDDael95udoZTQ"
-    };
-    private static int reqCont = 0;
-    public static String getDSUrl(boolean right){
-        if(right) reqCont++;
-        else reqCont--;
-        if(reqCont<0) reqCont = DSurls.length-1;
-        return DSurls[reqCont%DSurls.length];
+    private static DSData dsData= new DSData();
+
+    public static String getDSUrl(){
+        return dsData.getDSUrl();
     }
+
+    public static String getDSUrl(boolean right){
+        return dsData.getDSUrl(right);
+    }
+
 
 
 
