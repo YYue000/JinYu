@@ -11,10 +11,12 @@ This app is based on Android platform.It contains 3 basic function:
 * daily messages shared
 
 dependecies:
-greenDAO 3
-bottom-navigation-bar 2.0.2
-sina cloud storage platform
-WeChat media platform
+
+* greenDAO 3
+*  bottom-navigation-bar 2.0.2
+* sina cloud storage platform
+* WeChat media platform
+* tomcat 
 
 ## About version 2.0 
 
