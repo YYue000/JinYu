@@ -32,9 +32,8 @@ WeChat media platform
 * database loaded
 * download module ready
 
-## To-do list
-* server service -to do
-* ...
+## About version 5.0 
+web service implemented
 
 ### Thanks for reading and attention
 
